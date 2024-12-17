@@ -40,17 +40,16 @@ Compilation Instructions
 To compile the code, use any C compiler, such as gcc.
 
 
-gcc -o find_median find_median.c
+   gcc -o find_median find_median.c
 Here, find_median.c is the name of your source file.
 
 Usage
 You can call the function findMedianSortedArrays within a main function, like this:
 
-c
+
 
 #include <stdio.h>
 #include <stdlib.h>
-
 double findMedianSortedArrays(int* nums1, int nums1Size, int* nums2, int nums2Size);
 
 int main() {
@@ -65,8 +64,7 @@ int main() {
     return 0;
 }
 Output:
-csharp
-Copy code
+
 The median is: 2.50
 Memory and Time Complexity
 Time Complexity: 
