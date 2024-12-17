@@ -15,39 +15,39 @@ Input:
 nums1 = [1, 2], nums2 = [3, 4]
 Output:
 Median = 2.5
-Function Signature
+# Function Signature
 
 double findMedianSortedArrays(int* nums1, int nums1Size, int* nums2, int nums2Size);
-Parameters:
+# Parameters:
 nums1: Pointer to the first sorted array.
 nums1Size: Size of the first array.
 nums2: Pointer to the second sorted array.
 nums2Size: Size of the second array.
-Returns:
+# Returns:
 double: The median of the two sorted arrays.
-How It Works
-Merge Step:
+# How It Works
+# Merge Step:
 The two input arrays are merged into a single sorted array using a two-pointer approach.
 
-Median Calculation:
+# Median Calculation:
 
 If the total size is odd, the median is the middle element.
 If the total size is even, the median is the average of the two middle elements.
-Memory Management:
+# Memory Management:
 Dynamic memory (malloc) is used to store the merged array, and it is freed after computing the result.
 
-Compilation Instructions
+# Compilation Instructions
 To compile the code, use any C compiler, such as gcc.
 
 
    gcc -o find_median find_median.c
 Here, find_median.c is the name of your source file.
 
-Usage
+# Usage
 You can call the function findMedianSortedArrays within a main function, like this:
 
 
-
+# Code
 #include <stdio.h>
 #include <stdlib.h>
 double findMedianSortedArrays(int* nums1, int nums1Size, int* nums2, int nums2Size);
@@ -63,15 +63,12 @@ int main() {
 
     return 0;
 }
-Output:
+# Output:
 
 The median is: 2.50
 Memory and Time Complexity
-Time Complexity: 
-
+# Time Complexity: 
 O(n+m), where 
-
-m are the sizes of the two arrays.
-Space Complexity: 
-
+n and m are the sizes of the two arrays.
+# Space Complexity: 
 O(n+m), as we allocate a new array to merge both inputs.
